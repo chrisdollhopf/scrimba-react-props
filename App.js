@@ -1,36 +1,37 @@
 import React from "react"
+import ContactCard from "./ContactCard"
 
 function App() {
     return (
         <div className="contacts">
 
-            <div className="contact-card">
-                <img src="http://placekitten.com/300/200"/>
-                <h3>Mr. Whiskerson</h3>
-                <p>Phone: (000) 111-2222</p>
-                <p>Email: mr.whiskaz@catnap.meow</p>
-            </div>
+            <ContactCard
+                name="Mr. Whiskerson"
+                imgUrl="http://placekitten.com/300/200"
+                phone="(000) 111-2222"
+                email="mr.whiskaz@catnap.meow"
+            />
+
+            <ContactCard
+                name="Mr. Benji"
+                imgUrl="http://placekitten.com/g/300/200"
+                phone="(111) 222-3333"
+                email="mr.benji@catnap.meow" 
+            />
+
+            <ContactCard
+                name="Mr. Tammy"
+                imgUrl="http://placekitten.com/300/200"
+                phone="(222) 333-4444"
+                email="mr.tammy@catnap.meow" 
+            />
             
-            <div className="contact-card">
-                <img src="http://placekitten.com/g/300/200"/>
-                <h3>Mr. Benji</h3>
-                <p>Phone: (111) 222-3333</p>
-                <p>Email: mr.benji@catnap.meow</p>
-            </div>
-
-            <div className="contact-card">
-                    <img src="http://placekitten.com/300/200"/>
-                <h3>Mr. Tammy</h3>
-                <p>Phone: (222) 333-4444</p>
-                <p>Email: mr.tammy@catnap.meow</p>
-            </div>
-
-            <div className="contact-card">
-                <img src="http://placekitten.com/g/300/200"/>
-                <h3>Mr. Ginger</h3>
-                <p>Phone: (333) 444-5555</p>
-                <p>Email: mr.ginger@catnap.meow</p>
-            </div>
+            <ContactCard
+                name="Mr. Ginger"
+                imgUrl="http://placekitten.com/g/300/200"
+                phone="(333) 444-5555"
+                email="mr.ginger@catnap.meow" 
+            />
 
         </div>
     )
